@@ -46,6 +46,11 @@ hr{
     margin: 20px 0;
 }
 
+footer{
+    background-color: #7c4f35;
+    text-align: center;
+}
+
 /* selector ID */
 
 #contenedor {
@@ -134,10 +139,6 @@ hr{
     background-color: aquamarine;
     color: white;
     transform: scale(1,1);
-}
-
-.footer{
-    background-color: #7c4f35;
 }
 
 .tarjeta{
