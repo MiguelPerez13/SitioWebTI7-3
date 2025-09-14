@@ -34,7 +34,7 @@ li a{
 
 li a:hover{
     color: paleturquoise;
-    font-size: 999999px;
+    font-size: 9999999999px;
     transition-duration: 400s;
 }
 
@@ -56,6 +56,7 @@ footer{
 #contenedor {
     width: auto;
     height: auto;
+    min-height: 530px;
     background-color: #7c4f35;
     margin: 40px;
     padding: 20px;
