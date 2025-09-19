@@ -19,8 +19,6 @@ nav{
 ul{
     text-align: center;
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
     text-transform: capitalize;
 }
 
@@ -33,6 +31,8 @@ li{
 li a{
     color: aqua;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     transition-duration: 10s;
 }
 

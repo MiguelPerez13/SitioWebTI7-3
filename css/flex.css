@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+}
+
+.contenedorEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: rgb(41,90,88);
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+
+}
+
+.contenedorSpaceA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(41,90,88);
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+}
+
+.contenedorSpaceBet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(41,90,88);
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+}
+
+.contenedorSpaceEve{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(41,90,88);
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+}
+
+.contenedorItemStretch{
+    display: flex;
+    align-items: stretch;
+    background-color: rgb(41,90,88);
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+}
+
+.contenedorItemEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: rgb(41,90,88);
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+}
+
+.contenedorItemCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: rgb(41,90,88);
+    padding: 10px;
+    border: 2px solid black;
+    width: 90%;
+}
+
+
+
+.item {
+    background-color: rgb(191,204,200);
+    width: 100px;
+    margin: 10px;
+    border: 2px solid;
+    text-align: center;
+    font-size: 75px;
+    line-height: 75px;
+}
+
+.item:hover{
+
+    background-color: rgb(112, 105, 105);
+
+}
