@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+    
+    <header class="encabezado">
+        <h2>Contactos</h2>
+    </header>
+
+    <section class="card">
+
+        <form action="https://formsubmit.co/c8415cfd20b5f7eaf84ef7a3ecfeaabc" method="post">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+            <br>
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" maxlength="3" placeholder="Tu edad" required>
+            <br>
+
+            <label for="estadoCivil">Estado civil</label>
+            <select name="estadoCivil" id="estadoCivil">
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="unionLibre">Union libre</option>
+                <option value="viudo">Viudo</option>
+            </select>
+            <br>
+
+            <label for="sexo">Sexo</label>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="masculino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" name="sexo" id="femenino">
+            <br>
+
+            <label for="idiomas">Idiomas</label>
+            <label for="es">Español</label>
+            <input type="checkbox" name="es" id="es">
+            <label for="en">Ingles</label>
+            <input type="checkbox" name="en" id="en">
+            <label for="ch">Chino</label>
+            <input type="checkbox" name="ch" id="ch">
+            <br>
+
+            <label for="fehcaNac">Fecha de nacimiento</label>
+            <input type="date" name="fehcaNac" id="fehcaNac">
+            <br>
+
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email">
+            <br>
+
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="5" placeholder="escribe aqui tus comentarios"></textarea>
+            <br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+</body>
+</html>
