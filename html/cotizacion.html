@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulario-auto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <title>Cotizacion</title>
+</head>
+<body>
+    
+    <header class="encabezado">
+        <img src="../assets/imgAutos/autosleek.jpeg" alt="Logo Autosleek">
+        <h1>Autosleek</h1>
+        <h2>Av. villa verde 125 col. san joaquin</h2>
+            <h3>Coahuila Sinaloa</h3>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="automovil.html">Regresar</a></li>
+      </ul>
+    </nav>
+
+    <section class="card">
+
+        <h2>Cotizacion</h2>
+
+        <form action="https://formsubmit.co/microinformaticamx@gmail.com" method="post">
+            <hr>
+            <h3>Datos del cliente</h3>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="Nombre" id="nombre" minlength="3" required>
+
+            <label for="email">Correo</label>
+            <input type="email" name="Correo" id="email" required>
+
+            <label for="poblacion">Poblacion</label>
+            <input type="text" name="Poblacion" id="poblacion" required>
+
+            <label for="edad">Edad</label>
+            <input type="number" name="Edad" id="edad" min="18" max="100">
+            <hr>
+
+            <h3>Datos del automovil</h3>
+            <label for="automovil">Automovil</label>
+            <select name="automovil" id="automovil">
+                <option value="Corola">Corola</option>
+                <option value="Avanza">Avanza</option>
+                <option value="Yaris">Yaris</option>
+
+                <option value="Sentra">Sentra</option>
+                <option value="March">March</option>
+                <option value="Versa">Versa</option>
+
+                <option value="Everest">Everest</option>
+                <option value="Raptor">Raptor</option>
+                <option value="Ranger">Ranger</option>
+            </select>
+            <hr>
+
+            <h3>Condiciones de pago</h3>
+            <label for="pagoIni">Pago inicial</label>
+            <input type="number" name="Pago inicial" id="pagoIni" min="10" max="100">
+
+            <p>Plazo a pagar</p>
+            <label for="12" class="radioLabel">12</label>
+            <input type="radio" name="Plazo" id="12" value="12">
+
+            <label for="24" class="radioLabel">24</label>
+            <input type="radio" name="Plazo" id="24" value="24">
+
+            <label for="36" class="radioLabel">36</label>
+            <input type="radio" name="Plazo" id="36" value="36">
+
+            <label for="48" class="radioLabel">48</label>
+            <input type="radio" name="Plazo" id="48" value="48">
+
+            <label for="60" class="radioLabel">60</label>
+            <input type="radio" name="Plazo" id="60" value="60">
+            <hr>
+
+            <h3>Comentarios</h3>
+            <textarea name="Comentarios" id="comentarios" rows="5" cols="50" maxlength="200"></textarea>
+            
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+
+    </section>
+
+</body>
+</html>

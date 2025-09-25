@@ -1,0 +1,128 @@
+*{
+    margin: 10px;
+    font-family: "smooch sans", sans-serif;
+}
+
+body{
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.card{
+    display: block;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(44, 206, 235);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    width: 40%;
+    height: auto;
+    color: black;
+    margin: 0px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+button{
+    width: 90%;
+    padding: 10px;
+    background-color: #007BEF;
+    color: white;
+    font-size: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: block;
+}
+
+button:hover{
+    background-color: #007bff;
+}
+
+.encabezado{
+    text-align: center;
+    font-size: 30px;
+    background-color: #007bff;
+    color: white;
+    width: 70%;
+}
+
+label{
+    color: black;
+}
+
+
+li{
+    display: inline;
+    margin: 3em;
+    padding: 10px, 20px;
+}
+
+li a{
+    color: rgb(44, 97, 139);
+    text-decoration: none;
+    font-size: 40px;
+    transition-duration: 10s;
+}
+
+li a:hover{
+    color: paleturquoise;
+    font-size: 9999999999px;
+    transition-duration: 400s;
+}
+
+form{
+    font-size: 30px;
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%;
+    height: 40px;
+    font-size: 30px;
+}
+
+input[type="number"]{
+    width: 20%;
+    height: 40px;
+    font-size: 30px;
+}
+
+select{
+    width: 40%;
+    height: 50px;
+    font-size: 30px;
+}
+
+textarea{
+    font-size: 30px;
+    width: 80%;
+    resize: none;
+}
+
+h2{
+    font-size: 60px;
+}
+
+
+.radioLabel{
+    display: inline;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
