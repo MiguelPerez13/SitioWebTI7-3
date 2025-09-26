@@ -69,14 +69,13 @@ h1{
 
 .imagenes{
     text-align: center;
+    padding-bottom: 20px;
 }
 
-img{
+.img{
     margin-top: 40px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 150px;
-    width: 200px;
 }
 
 aside{
@@ -84,12 +83,16 @@ aside{
     background-color: white;
     border-left: 2px solid black;
     margin-left: 2%;
-    padding-top: 0px;
+    padding-top: 30px;
     padding-left: 10px;
 }
 
 aside h2{
     margin-left: 15px;
+}
+
+.imgC{
+    margin-left: 10px;
 }
 
 footer{
