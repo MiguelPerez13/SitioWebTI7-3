@@ -1,0 +1,103 @@
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+    width: 60%;
+    margin: 0px auto;
+    border: 2px solid black;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#encabezado{
+    background-color: saddlebrown;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid black;
+}
+
+#menu{
+    background-color: blanchedalmond;
+    padding: 3px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#menu li{
+    display: inline;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    transition: 0.2s;
+    color: gray;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#contenedor{
+    display: flex;
+    min-height: 710px;
+    background-color: white;
+}
+
+.principal{
+    background-color: white;
+    width: 63%;
+    border-right: 2px solid black;
+}
+
+.texto{
+    padding: 20px 100px 10px 40px;
+}
+
+.imagenes{
+    text-align: center;
+}
+
+img{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 150px;
+    width: 200px;
+}
+
+aside{
+    width: 35%;
+    background-color: white;
+    border-left: 2px solid black;
+    margin-left: 2%;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+aside h2{
+    margin-left: 15px;
+}
+
+footer{
+    background-color: blanchedalmond;
+    border-top: 2px solid black;
+    color: black;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
