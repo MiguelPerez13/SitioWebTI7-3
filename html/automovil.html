@@ -1,195 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Automoviles Luisito Corporation</title>
-    <meta
-      name="description"
-      content="Venta de automoviles de la marca toyota"
-    />
-    <meta
-      name="keywords"
-      content="automoviles, nissan, toyota, ford, carro, luisin, carros baratos, carros caros, carros nuevos, carros viejos"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/automoviles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automoviles Luisito Corporation</title>
+  <meta name="description" content="Venta de automoviles de la marca toyota" />
+  <meta name="keywords"
+    content="automoviles, nissan, toyota, ford, carro, luisin, carros baratos, carros caros, carros nuevos, carros viejos" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header id="encabezado">
-      <h1>Automoviles Luisito Corporation</h1>
-      <h2>Av. villa verde 125 col. san joaquin</h2>
-      <h3>Coahuila Sinaloa</h3>
-    </header>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/automoviles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+</head>
 
-    <nav>
-      <ul>
-        <li><a href="../index.html">Index</a></li>
-        <li><a href="#toyota">Toyota</a></li>
-        <li><a href="#nissan">Nissan</a></li>
-        <li><a href="#ford">Ford</a></li>
-        <li><a href="../html/cotizacion.html">Cotizacion</a></li>
-      </ul>
-    </nav>
+<body>
+  <header class="fondo">
+    <div class="menu container">
+      <a href="#" class="logo">Automoviles Luisito Corporation</a>
 
-    <main id="contenedor">
+      <input type="checkbox" name="menu" id="menu">
+      <label for="menu">
+        <img src="../assets/menu.png" alt="">
+      </label>
 
-      <section>
-        <!-- iniciando con la marca toyota -->
-        <a id="toyota"></a>
-        <header>
-          <center>
-            <img class="imagen"
-              src="../assets/imgAutos/logo toyota.webp"
-              alt="logo toyota"
-            /><br />
-            <br />
-            
-          </center>
-        </header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Index</a></li>
+          <li><a href="#toyota">Toyota</a></li>
+          <li><a href="#nissan">Nissan</a></li>
+          <li><a href="#ford">Ford</a></li>
+          <li><a href="../html/cotizacion.html">Cotizacion</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="listas">
-          <div id="producto" class="tarjeta">
-            <h2 class="modelo">Corola</h2>
-            <img
-            class="img"
-            src="../assets/imgAutos/toyota1.webp"
-            alt="toyota corola"
-            />
-            <p class="descripcion">
-              El Toyota Corolla es sinónimo de confiabilidad y eficiencia. Este sedán combina un diseño moderno con un rendimiento excepcional en ciudad y carretera. Ideal para quienes buscan comodidad, seguridad y bajo consumo de combustible, el Corolla es un clásico que sigue sorprendiendo generación tras generación.
-            </p>
-            <button class="boton">Mas informacion</button>
-          </div>
-          
-          
-          <div id="producto" class="tarjeta">
-            <h2 class="modelo">Avanza</h2>
-            <img
-            class="img"
-            src="../assets/imgAutos/avanza-toyota.png"
-            alt="Camioneta corola"
-            />
-            <p class="descripcion">
-              La Toyota Avanza es perfecta para familias que necesitan espacio y versatilidad. Con un diseño compacto pero interior amplio, ofrece comodidad para todos los pasajeros y un manejo ágil en la ciudad. Su economía de combustible y confiabilidad hacen de la Avanza una opción práctica y segura para el día a día.
-            </p>
-            <button class="boton">Mas informacion</button>
-          </div>
-          
-          
-          <div id="producto" class="tarjeta">
-            <h2 class="modelo">Yaris</h2>
-            <img class="img" src="../assets/imgAutos/toyota3.jpg" alt="yaris corola" />
-            <p class="descripcion">
-              El Toyota Yaris destaca por su estilo juvenil y dinámico. Este compacto combina eficiencia, tecnología y maniobrabilidad, siendo ideal para la vida urbana. Con un diseño moderno y características de seguridad avanzadas, el Yaris es perfecto para quienes buscan un auto ágil, económico y confiable.
-            </p>
-            <button class="boton">Mas informacion</button>
-          </div>
-        </div>
-          
-        </section>
 
-        <hr>
-        
-      <section>
-        <!-- iniciando con la marca nissan -->
-        <a id="nissan"></a>
-        <header>
-          <center>
-            <img class="imagen"
-              src="../assets/imgAutos/logo nissan.webp"
-              alt="logo nissan"
-            /><br />
-            <br />
-            
-          </center>
-        </header>
+  <main id="contenedor">
 
-        <div class="listas">
+    <section>
+      <!-- iniciando con la marca toyota -->
+      <a id="toyota"></a>
+      <header>
+        <center>
+          <img class="imagen" src="../assets/imgAutos/logo toyota.webp" alt="logo toyota" /><br />
+          <br />
+
+        </center>
+      </header>
+
+      <div class="listas">
         <div id="producto" class="tarjeta">
+          <img class="img" src="../assets/imgAutos/toyota1.webp" alt="toyota corola" />
+          <h2 class="modelo">Corola</h2>
+          <p class="descripcion">
+            El Toyota Corolla es sinónimo de confiabilidad y eficiencia. Este sedán combina un diseño moderno con un
+            rendimiento excepcional en ciudad y carretera. Ideal para quienes buscan comodidad, seguridad y bajo consumo
+            de combustible, el Corolla es un clásico que sigue sorprendiendo generación tras generación.
+          </p>
+          <button class="boton">Mas informacion</button>
+        </div>
+
+
+        <div id="producto" class="tarjeta">
+          <img class="img" src="../assets/imgAutos/avanza-toyota.png" alt="Camioneta corola" />
+          <h2 class="modelo">Avanza</h2>
+          <p class="descripcion">
+            La Toyota Avanza es perfecta para familias que necesitan espacio y versatilidad. Con un diseño compacto pero
+            interior amplio, ofrece comodidad para todos los pasajeros y un manejo ágil en la ciudad. Su economía de
+            combustible y confiabilidad hacen de la Avanza una opción práctica y segura para el día a día.
+          </p>
+          <button class="boton">Mas informacion</button>
+        </div>
+
+
+        <div id="producto" class="tarjeta">
+          <img class="img" src="../assets/imgAutos/toyota3.jpg" alt="yaris corola" />
+          <h2 class="modelo">Yaris</h2>
+          <p class="descripcion">
+            El Toyota Yaris destaca por su estilo juvenil y dinámico. Este compacto combina eficiencia, tecnología y
+            maniobrabilidad, siendo ideal para la vida urbana. Con un diseño moderno y características de seguridad
+            avanzadas, el Yaris es perfecto para quienes buscan un auto ágil, económico y confiable.
+          </p>
+          <button class="boton">Mas informacion</button>
+        </div>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <section>
+      <!-- iniciando con la marca nissan -->
+      <a id="nissan"></a>
+      <header>
+        <center>
+          <img class="imagen" src="../assets/imgAutos/logo nissan.webp" alt="logo nissan" /><br />
+          <br />
+
+        </center>
+      </header>
+
+      <div class="listas">
+        <div id="producto" class="tarjeta">
+          <img class="img" src="../assets/imgAutos/nissan1.webp" alt="nissan 1" />
           <h2 class="modelo">Sentra</h2>
-          <img src="../assets/imgAutos/nissan1.webp" alt="nissan 1" />
           <p class="descripcion">
-            El Nissan Sentra es un sedán elegante y confortable, ideal para quienes buscan estilo y rendimiento. Con un interior espacioso, tecnología intuitiva y eficiencia en el consumo de combustible, el Sentra combina seguridad y comodidad, convirtiéndolo en una opción confiable tanto para la ciudad como para viajes largos.
+            El Nissan Sentra es un sedán elegante y confortable, ideal para quienes buscan estilo y rendimiento. Con un
+            interior espacioso, tecnología intuitiva y eficiencia en el consumo de combustible, el Sentra combina
+            seguridad y comodidad, convirtiéndolo en una opción confiable tanto para la ciudad como para viajes largos.
           </p>
           <button class="boton">Mas informacion</button>
         </div>
-          
+
 
         <div id="producto" class="tarjeta">
-          <h2 class="modelo">March</h2>
           <img class="img" src="../assets/imgAutos/march-nissan.png" alt="nissan 2" />
+          <h2 class="modelo">March</h2>
           <p class="descripcion">
-            El Nissan March es un compacto ágil y divertido de conducir. Perfecto para la ciudad, ofrece eficiencia de combustible y maniobrabilidad en espacios reducidos. Su diseño moderno y juvenil lo hace destacar, y su interior inteligente aprovecha cada centímetro para brindar comodidad en cada viaje.
+            El Nissan March es un compacto ágil y divertido de conducir. Perfecto para la ciudad, ofrece eficiencia de
+            combustible y maniobrabilidad en espacios reducidos. Su diseño moderno y juvenil lo hace destacar, y su
+            interior inteligente aprovecha cada centímetro para brindar comodidad en cada viaje.
           </p>
           <button class="boton">Mas informacion</button>
         </div>
-          
+
 
         <div id="producto" class="tarjeta">
-          <h2 class="modelo">Versa</h2>
           <img class="img" src="../assets/imgAutos/versa-nissan.webp" alt="nissan 3" />
-        <p class="descripcion">
-          El Nissan Versa combina espacio, eficiencia y tecnología a un precio accesible. Su interior amplio y cómodo, junto con características de seguridad avanzadas, lo convierten en una opción ideal para familias jóvenes o conductores que buscan un auto práctico, confiable y económico.
-        </p>
-        <button class="boton">Mas informacion</button>
+          <h2 class="modelo">Versa</h2>
+          <p class="descripcion">
+            El Nissan Versa combina espacio, eficiencia y tecnología a un precio accesible. Su interior amplio y cómodo,
+            junto con características de seguridad avanzadas, lo convierten en una opción ideal para familias jóvenes o
+            conductores que buscan un auto práctico, confiable y económico.
+          </p>
+          <button class="boton">Mas informacion</button>
         </div>
-        </div>          
+      </div>
 
-      </section>
+    </section>
 
-      <hr>
+    <hr>
 
-      <section>
-        <!-- iniciando con la marca ford -->
-        <a id="ford"></a>
-        <header>
-          <center>
-            <img src="../assets/imgAutos/logo ford.png" class="imagen" alt="logo ford" /><br />
-            <br />
-            
-          </center>
-        </header>
+    <section>
+      <!-- iniciando con la marca ford -->
+      <a id="ford"></a>
+      <header>
+        <center>
+          <img src="../assets/imgAutos/logo ford.png" class="imagen" alt="logo ford" /><br />
+          <br />
 
-        <div class="listas">
+        </center>
+      </header>
+
+      <div class="listas">
         <div id="producto" class="tarjeta">
+          <img class="img" src="../assets/imgAutos/ford1.webp" alt="Ford 1" />
           <h2 class="modelo">Everest</h2>
-          <img src="../assets/imgAutos/ford1.webp" alt="Ford 1" />
           <p class="descripcion">
-            La Ford Everest es una SUV robusta y elegante, ideal para aventuras y para la vida familiar. Combina un diseño imponente con comodidad, tecnología avanzada y seguridad de primer nivel. Con su capacidad todoterreno y amplio espacio interior, la Everest está lista para cualquier camino que decidas conquistar.
+            La Ford Everest es una SUV robusta y elegante, ideal para aventuras y para la vida familiar. Combina un
+            diseño imponente con comodidad, tecnología avanzada y seguridad de primer nivel. Con su capacidad
+            todoterreno y amplio espacio interior, la Everest está lista para cualquier camino que decidas conquistar.
           </p>
           <button class="boton">Mas informacion</button>
         </div>
-        
+
 
         <div id="producto" class="tarjeta">
-          <h2 class="modelo">Raptor</h2>
           <img class="img" src="../assets/imgAutos/ford2.jpeg" alt="Ford 2" />
+          <h2 class="modelo">Raptor</h2>
           <p class="descripcion">
-            La Ford Raptor es la pick-up más atrevida y poderosa de Ford. Diseñada para terrenos extremos, ofrece un rendimiento impresionante, suspensión avanzada y un diseño agresivo que llama la atención. Perfecta para los que buscan potencia, adrenalina y estilo en cada viaje.
+            La Ford Raptor es la pick-up más atrevida y poderosa de Ford. Diseñada para terrenos extremos, ofrece un
+            rendimiento impresionante, suspensión avanzada y un diseño agresivo que llama la atención. Perfecta para los
+            que buscan potencia, adrenalina y estilo en cada viaje.
           </p>
           <button class="boton">Mas informacion</button>
         </div>
-          
-          <div id="producto" class="tarjeta">
-          <h2 class="modelo">Ranger</h2>
-          <img class="img" src="../assets/imgAutos/ford3.png" alt="Ford 3" />
-          <p class="descripcion">
-            La Ford Ranger es la pick-up versátil y confiable que se adapta a todas tus necesidades. Con fuerza para el trabajo pesado y tecnología para la vida diaria, combina rendimiento, seguridad y comodidad. Ideal para quienes necesitan un vehículo resistente sin sacrificar estilo ni confort.
-          </p>
-          <button class="boton">Mas informacion</button>
-        </div>
-        </div>
-          
-        </section>
-    </main>
 
-    
-    <footer>Todos los derechos reservados por Miguel Perez</footer>
-  </body>
+        <div id="producto" class="tarjeta">
+          <img class="img" src="../assets/imgAutos/ford3.png" alt="Ford 3" />
+          <h2 class="modelo">Ranger</h2>
+          <p class="descripcion">
+            La Ford Ranger es la pick-up versátil y confiable que se adapta a todas tus necesidades. Con fuerza para el
+            trabajo pesado y tecnología para la vida diaria, combina rendimiento, seguridad y comodidad. Ideal para
+            quienes necesitan un vehículo resistente sin sacrificar estilo ni confort.
+          </p>
+          <button class="boton">Mas informacion</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
+  <footer>Todos los derechos reservados por Miguel Perez</footer>
+</body>
+
 </html>
