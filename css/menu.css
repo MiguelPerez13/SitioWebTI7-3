@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Solución al solapamiento: Más padding-top para compensar el header fijo */
+    padding-top: 80px; 
+}
+
+/* Se elimina el background-color de .container, se pasa al .fondo */
+.container {
+    max-width: 1200px; /* Un valor más lógico para un contenedor */
+    margin: 0 auto;
+}
+
+/* Fija el header principal */
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+}
+
+/* El contenedor del menú debe ser relative para el menú móvil */
+.menu {
+    position: relative; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 15px 20px; /* Espacio para el header */
+}
+
+/* La etiqueta nav ya no necesita position: fixed */
+nav {
+    z-index: 1000;
+}
+
+/* La clase menu-item ya no es necesaria con el HTML corregido */
+/* .menu-item {
+    display: flex;
+    align-items: center;
+} */
+
+.logo {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Estilos de la lista de navegación */
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 15px 20px; /* Ajuste de padding */
+    color: white;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: darkcyan;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+@media(max-width: 660px) {
+    /* El padding del menú ya se ajusta con el .menu arriba, pero lo reforzamos */
+    .menu {
+        padding: 15px 20px; 
+    }
+
+    .menu label {
+        display: initial; /* Muestra el icono de la hamburguesa */
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%; /* Se posiciona justo debajo del header */
+        left: 0;
+        right: 0;
+        background-color: rgb(5, 5, 4);
+        display: none; /* Oculto por defecto */
+        width: 100%; 
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    /* Muestra el navbar cuando el checkbox está marcado */
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}

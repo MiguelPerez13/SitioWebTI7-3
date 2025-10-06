@@ -1,0 +1,26 @@
+/* estilo para dispositivos peques */
+
+body{
+    background-color: lightblue;
+    font-size: 14px;
+}
+
+/* pantallas medianas, tablets de 600px a 1023 */
+@media(min-width:600px) and (max-width:1023px){
+
+    body{
+        background-color: lightgreen;
+        font-size: 16px;
+    }
+
+}
+
+/* pantallas grandes de 1024 en adelante*/
+@media (min-width:1024px){
+
+    body{
+        background-color: lightsalmon;
+        font-size: 18px;
+    }
+
+}
