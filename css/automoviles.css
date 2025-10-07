@@ -233,6 +233,21 @@ footer{
 
 }
 
+@media(max-width:900px) {
+    .listas{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .tarjeta{
+        margin-bottom: 60px;
+        width: 90%;
+    }
+
+}
+
+
 @media(max-width:1116px){
     .menu{
         padding: 15px 20px;
