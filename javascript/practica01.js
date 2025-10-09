@@ -5,6 +5,7 @@
     const btnMin = document.getElementById('btnMin');
     const btnAgregar = document.getElementById('btnAgregar');
     const btnJustificar = document.querySelector('#justificarBtn');
+    const btnDesjustificar = document.getElementById('desjustificarBtn');
 
     var col = parrafo.style.color;
     var tm = parrafo.style.fontStyle;
@@ -38,6 +39,11 @@
         parrafo.style.margin = '10em';
     }
 
+    function desjustificar(){
+        parrafo.style.textAlign = 'left';
+        parrafo.style.margin = '0em';
+    }
+
     //codificar los eventos del parrafo
     parrafo.addEventListener('mouseover',cambiar);
     parrafo.addEventListener('mouseout',normal);
@@ -45,6 +51,7 @@
     btnMin.addEventListener('click',minuscula);
     btnAgregar.addEventListener('click',agregarTexto);
     btnJustificar.addEventListener('click',justificar);
+    btnDesjustificar.addEventListener('click',desjustificar);
 
 
     
