@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de tabla</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif; padding: 20px;}
+        input{margin: 5px; padding: 5px;}
+        table{width: 100%; border-collapse: collapse; margin-top: 20px;}
+        th, td{border: 1px solid;padding: 8px; text-align: left;}
+        th{background-color: #f2f2f2;}
+        .btn{padding: 6px 12px; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <a href="./javascript.html">Atras</a>
+
+    <center>
+        <h2>Agregar estudiantes</h2>
+    </center>
+
+    <label for="idInput">ID:</label>
+    <input type="text" id="idInput" placeholder="ID">
+
+    <label for="nombreInput">Nombre:</label>
+    <input type="text" id="nombreInput" placeholder="Nombre">
+
+    <label for="escuelaInput">Escuela:</label>
+    <input type="text" id="escuelaInput" placeholder="Escuela">
+
+    <button id="btnAgregar" class="btn">Agregar</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Escuela</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Filas agregadas dinamicamente -->
+        </tbody>
+    </table>
+
+</body>
+<script src="../javascript/practica05.js"></script>
+</html>

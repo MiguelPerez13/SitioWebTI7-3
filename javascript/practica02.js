@@ -1,79 +1,57 @@
+/* obtener los objetos */
+
+    const parrafo = document.getElementById('parrafo');
+    const btnMay = document.getElementById('btnMay');
+    const btnMin = document.getElementById('btnMin');
+    const btnAgregar = document.getElementById('btnAgregar');
+    const btnJustificar = document.querySelector('#justificarBtn');
+    const btnDesjustificar = document.getElementById('desjustificarBtn');
+
+    var col = parrafo.style.color;
+    var tm = parrafo.style.fontStyle;
+    var cf = parrafo.style.backgroundColor;
+
+    function cambiar(){
+        parrafo.style.color ='cyan';
+        parrafo.style.fontSize = '20px';
+        parrafo.style.backgroundColor = 'gray';
+
+    }
+    function normal(){
+        parrafo.style.color = col;
+        parrafo.style.font = tm;
+        parrafo.style.backgroundColor = cf;
+
+    }
+    function mayuscula(){
+        parrafo.textContent = parrafo.textContent.toUpperCase();
+    }
+    function minuscula(){
+        parrafo.textContent = parrafo.textContent.toLowerCase();
+    }
+    function agregarTexto(){
+        let txt = txtTexto.value;
+        parrafo.innerText = parrafo.innerText + txt;
+    }
+
+    function justificar(){
+        parrafo.style.textAlign = 'justify';
+        parrafo.style.margin = '10em';
+    }
+
+    function desjustificar(){
+        parrafo.style.textAlign = 'left';
+        parrafo.style.margin = '0em';
+    }
+
+    //codificar los eventos del parrafo
+    parrafo.addEventListener('mouseover',cambiar);
+    parrafo.addEventListener('mouseout',normal);
+    btnMay.addEventListener('click',mayuscula);
+    btnMin.addEventListener('click',minuscula);
+    btnAgregar.addEventListener('click',agregarTexto);
+    btnJustificar.addEventListener('click',justificar);
+    btnDesjustificar.addEventListener('click',desjustificar);
 
 
-const operaciones = document.getElementById('operaciones');
-const operador = document.getElementById('lblOp');
-const txtNum1 = document.getElementById('txtNum1');
-const txtNum2 = document.getElementById('txtNum2');
-const resultado = document.getElementById('resultado');
-const btnCalcular = document.getElementById('btnCalcular');
-
-//declarar funciones
-
-//funcion para actualizar el operador
-
-function mostrarOperador(){
     
-    
-    const item = parseInt(operaciones.value);
-    let op = "";
-
-    switch(item){
-        case 1:
-            op = '+';
-        break;
-        case 2:
-            op = '-';
-        break;
-        case 3:
-            op = '*';
-        break;
-        case 4:
-            op = '/';
-        break;
-        default:
-            op = "";
-        break;
-    }
-    operador.textContent = op;
-}
-
-function calcular(){
-    const num1 = parseInt(txtNum1.value);
-    const num2 = parseInt(txtNum2.value);
-    const operacion = parseInt(operaciones.value);
-    let res = 0;
-
-    if(isNaN(num1) || isNaN(num2)){
-        resultado.textContent = 'Favor de ingresar dos numeros';
-        
-        return;
-    }
-
-    switch(operacion){
-        case 1:
-            res = num1+num2;
-        break;
-        case 2:
-            res = num1-num2;
-        break;
-        case 3:
-            res = num1*num2;
-        break;
-        case 4:
-            res = num1/num2;
-        break;
-        default:
-            res = 'Sin operacion';
-        break;
-    }
-
-    resultado.textContent = res;
-}
-
-operaciones.addEventListener('change',mostrarOperador);
-
-btnCalcular.addEventListener('click',calcular)
-
-
-
-

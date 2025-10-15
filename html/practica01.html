@@ -3,36 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 01 JavaScript DHTML</title>
+    <title>Contador simple</title>
+    <style>
+        body{ font-family: Arial, Helvetica, sans-serif; text-align: center; margin-top: 50px; }
+        .contador{ font-size: 48px; margin-bottom: 20px;}
+        button{margin: 5px; padding: 10px 20px; font-size: 18px;}
+    </style>
 </head>
 <body>
-    <HEADer>
-        <center>
-            <h2>Practica 01 JavaScript</h2>
-        </center>
-    </HEADer>
+    <a href="./javascript.html">Atras</a>
 
-    <section>
-        <p id="parrafo">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magni distinctio sed facere reprehenderit obcaecati commodi suscipit soluta architecto sequi, necessitatibus quam tempore modi iste assumenda molestias non aliquam accusamus?
-           A libero dicta voluptas laudantium, ducimus cupiditate culpa doloremque minus eius, optio dignissimos laboriosam at ex voluptatem quis beatae quidem enim ullam neque ipsam porro nisi itaque? Cumque, sapiente rerum.
-           Nostrum tempora vitae neque possimus sunt rem voluptates deleniti, officia eligendi, beatae vel! Similique, cum quod ab, exercitationem sunt est minima impedit fugit saepe iste et nisi eum alias enim.
-
-        </p>
-        <br>
-        <hr>
-            <button id="btnMay">Parrafo en Mayusculas</button>
-            <button id="btnMin">Parrafo en Minusculas</button>
-            <button id="justificarBtn">Justificar texto</button>
-            <button id="desjustificarBtn">Quitar justificado</button>
-            <br>
-            <hr>
-            <label for="">Agregar Texto al parrafo</label>
-            <input type="text" name="" id="txtTexto">
-            <button id="btnAgregar">Agregar Texto</button>
-
-    </section>
-
+    <div class="contador" id="valor">0</div>
+    <button id="incrementar">Incrementar</button>
+    <button id="disminuir">Disminuir</button>
+    <button id="reiniciar">Reiniciar</button>
+    
     <script src="../javascript/practica01.js"></script>
 </body>
 </html>
