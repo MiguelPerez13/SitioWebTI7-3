@@ -38,4 +38,32 @@ function agregarFila(){
 
 }
 
+function listarAlumnos(){
+    fetch('../javascript/alumnos.json')
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        datos.forEach(element => {
+            const fila = document.createElement('tr');
+            
+            const celdaId = document.createElement('td');
+            celdaId.textContent = element.id;
+            fila.appendChild(celdaId);
+
+            const celdaNombre = document.createElement('td');
+            celdaNombre.textContent = element.nombre;
+            fila.appendChild(celdaNombre);
+
+            const celdaEscuela = document.createElement('td');
+            celdaEscuela.textContent = element.escuela;
+            fila.appendChild(celdaEscuela);
+
+            tablaBody.appendChild(fila);
+        });
+    })
+    .catch(error => console.log('Error: '+error));
+    console.log('json:');
+    
+}
+
 btnAgregar.addEventListener('click',agregarFila);
+document.addEventListener('DOMContentLoaded',listarAlumnos);
